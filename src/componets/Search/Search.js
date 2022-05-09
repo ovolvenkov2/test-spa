@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './Search.css';
 import {useEffect, useState} from "react";
 import {useDebounce} from "../../hooks/useDebounce";
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css'
+import './ListItem.css'
 
 const ListItem = ({itemText}) => (<li>
     {itemText}

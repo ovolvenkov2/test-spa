@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './List.css';
 import ListItem from './ListItem/ListItem'
 import {useEffect, useState} from "react";
 import {sortArrayValues} from "../../utils/sortArrayValues";
