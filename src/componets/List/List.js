@@ -1,22 +1,23 @@
+import React from 'react';
+import './style.css';
 import ListItem from './ListItem/ListItem'
 import {useEffect, useState} from "react";
-import {sortLettersArray} from "../../utils/sortLettersArray";
+import {sortArrayValues} from "../../utils/sortArrayValues";
 import getBandsData from "../../api/musicServices";
-import config from './List.config'
 
 const List = ({queryStr}) => {
-  const { defaultLettersArray } = config;
+  const defaultLettersArray = ['A', 'B', 'C', 'D', 'E'];
   const [ albumsData, setAlbumsData ] = useState();
   const [ arrayLetters, setArrayLetters ] = useState(defaultLettersArray);
 
-  useEffect(()=>{
+  useEffect(() => {
     const interval = setInterval(() => {
-      setArrayLetters(sortLettersArray(arrayLetters, albumsData));
+      setArrayLetters(sortArrayValues(arrayLetters, albumsData));
     }, 1000);
     return () => clearInterval(interval);
   });
 
-  useEffect(()=>{
+  useEffect(() => {
     getBandsData(queryStr, setAlbumsData);
   },[queryStr]);
 

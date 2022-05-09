@@ -1,4 +1,4 @@
-export const sortLettersArray = (arrayLetters, albumsArray) => {
+export const sortArrayValues = (arrayLetters, albumsArray) => {
   const isAlbums = albumsArray?.length;
   const lastItem = isAlbums ? albumsArray.shift() : arrayLetters.shift();
   isAlbums && arrayLetters.shift();

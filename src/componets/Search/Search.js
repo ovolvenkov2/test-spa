@@ -1,4 +1,5 @@
-import config from './Search.config'
+import React from 'react';
+import './style.css';
 import {useEffect, useState} from "react";
 import {useDebounce} from "../../hooks/useDebounce";
 
@@ -7,10 +8,10 @@ const Search = ({setQueryStr}) => {
   const debouncedSearchTerm = useDebounce(value, 500) || "";
   const onChangeHandler = (e) => setValue(e.target.value);
 
-  useEffect(() => setQueryStr(debouncedSearchTerm), [debouncedSearchTerm]);
+  useEffect(() => setQueryStr(debouncedSearchTerm), [debouncedSearchTerm, setQueryStr]);
 
   return <input type="text"
-                placeholder={config.placeholderText}
+                placeholder="Find albums..."
                 onChange={onChangeHandler}/>
 };
 

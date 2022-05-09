@@ -1,0 +1,13 @@
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  border: 1px solid #000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  vertical-align: middle;
+  border-radius: 5px;
+  background-color: #fff;
+}

@@ -5,33 +5,5 @@
 }
 
 .root {
-  min-width: 400px;
-}
-
-input {
-  margin-bottom: 5px;
-  min-height: 30px;
-  border-radius: 5px;
   width: 400px;
 }
-
-ul {
-  margin: 0 auto;
-  background-color: #969696;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-
-li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  border: 1px solid #000;
-  padding-top: 20px;
-  margin-bottom: 5px;
-  vertical-align: middle;
-  border-radius: 5px;
-  background-color: #fff;
-}
-
